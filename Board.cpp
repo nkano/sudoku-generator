@@ -6,7 +6,6 @@
 using namespace std;
 
 Board::Board() {
-    srand((unsigned int)time(NULL));
     this->init();
 }
 
