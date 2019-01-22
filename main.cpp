@@ -5,26 +5,26 @@
 using namespace std;
 
 int main( void ) {
-	srand( ( unsigned ) time( NULL ) );
+    srand( ( unsigned ) time( NULL ) );
 
-	Board* b = new Board( );
-	
-	cout << "generation starts." << endl;
-	b->makePuzzle( );
-	cout << "---------" << endl;
-	cout << "problem" << endl;
-	cout << "---------" << endl;
-	b->drawUnfilled( );
-	cout << "---------" << endl << endl;
-	cout << "---------" << endl;
-	cout << "solution" << endl;
-	cout << "---------" << endl;
-	b->drawFilled( );
-	cout << "---------" << endl;
+    Board* b = new Board( );
+    
+    cout << "generation starts." << endl;
+    b->makePuzzle( );
+    cout << "---------" << endl;
+    cout << "problem" << endl;
+    cout << "---------" << endl;
+    b->drawUnfilled( );
+    cout << "---------" << endl << endl;
+    cout << "---------" << endl;
+    cout << "solution" << endl;
+    cout << "---------" << endl;
+    b->drawFilled( );
+    cout << "---------" << endl;
 
-	b->init();
+    b->init();
 
-	delete b;
+    delete b;
 
-	return 0;
+    return 0;
 }
